@@ -19,7 +19,7 @@ export class AppComponent {
     await worker.load();
     await worker.loadLanguage('nld');
     await worker.initialize('nld');
-    const { data: { text } } = await worker.recognize('https://raw.githubusercontent.com/jenshelderweirdt/github-4wkmeu/master/src/assets/r5.jpeg');
+    const { data: { text } } = await worker.recognize('https://raw.githubusercontent.com/jenshelderweirdt/github-4wkmeu/master/src/assets/r6.jpeg');
     this.ocrResult = text;
     console.log(text);
     await worker.terminate();
